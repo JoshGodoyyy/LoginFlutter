@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(primarySwatch: Colors.blue),
       home: const BoasVindas(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

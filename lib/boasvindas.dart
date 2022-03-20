@@ -63,10 +63,10 @@ class _BoasVindasState extends State<BoasVindas> {
     SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
 
     //Verifica se já existe um usuário com aquele token
-    if (sharedPreferences.getString('token') != null) {
-      return true;
-    } else {
+    if (sharedPreferences.getString('token') == null) {
       return false;
+    } else {
+      return true;
     }
   }
 }
